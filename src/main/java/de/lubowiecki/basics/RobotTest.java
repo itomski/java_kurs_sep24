@@ -6,15 +6,12 @@ public class RobotTest {
 
     public static void main(String[] args) {
 
-        int[] x, y, z[];
-
-
+        // Der Scanner liest die Usereingabe von der CMD ein
         Scanner scanner = new Scanner(System.in);
-
         System.out.print("Eingabe: ");
         String eingabe = scanner.nextLine();
 
-        Robot r1 = new Robot(eingabe);
+        Robot r1 = new Robot(eingabe); // Verwendung eines Konstruktors
         //r1.setName(eingabe);
         System.out.println("Mein Name ist " + r1.getName());
         System.out.println("Mein Position ist x: " + r1.getX() + ", y: " + r1.getY());
@@ -37,7 +34,8 @@ public class RobotTest {
                 break; // Bricht die Schleife ab.
             }
 
-            System.out.println("Mein Position ist x: " + r1.getX() + ", y: " + r1.getY());
+            // System.out.println("Mein Position ist x: " + r1.getX() + ", y: " + r1.getY());
+            System.out.printf("Mein Position ist x: %d, y: %d \n", r1.getY(), r1.getX());
         }
 
         System.out.println("Programmende.");
