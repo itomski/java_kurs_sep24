@@ -14,6 +14,9 @@ public class Buch {
     }
 
     public Buch(int seiten, String titel, String autor, int erscheinungsJahr) {
+        // seiten - Lokale Variable (Parameter)
+        // this.seiten - Instanzvariable
+
         this.seiten = seiten;
         this.titel = titel;
         this.autor = autor;
