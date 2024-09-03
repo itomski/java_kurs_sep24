@@ -2,26 +2,22 @@ package de.lubowiecki.basics;
 
 public class Buch {
 
-    private int seiten;
     private String titel;
 
     private String autor;
 
+    private int seiten;
+
     private int erscheinungsJahr;
+
+    public Buch() {
+    }
 
     public Buch(int seiten, String titel, String autor, int erscheinungsJahr) {
         this.seiten = seiten;
         this.titel = titel;
         this.autor = autor;
         this.erscheinungsJahr = erscheinungsJahr;
-    }
-
-    public int getSeiten() {
-        return seiten;
-    }
-
-    public void setSeiten(int seiten) {
-        this.seiten = seiten;
     }
 
     public String getTitel() {
@@ -38,6 +34,14 @@ public class Buch {
 
     public void setAutor(String autor) {
         this.autor = autor;
+    }
+
+    public int getSeiten() {
+        return seiten;
+    }
+
+    public void setSeiten(int seiten) {
+        this.seiten = seiten;
     }
 
     public int getErscheinungsJahr() {
