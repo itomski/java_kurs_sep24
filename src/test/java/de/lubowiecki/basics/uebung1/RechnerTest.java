@@ -17,6 +17,7 @@ class RechnerTest {
         Rechner rechner = new Rechner();
         var erg = rechner.add(5, 4);
         assertEquals(9, erg);
+        Object o = new Object();
     }
 
     @Test
