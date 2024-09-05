@@ -1,26 +1,29 @@
 package de.lubowiecki.basics.uebung4;
 
+import java.time.LocalDate;
+
 public class Produkt {
 
-    private String datum;
+    private LocalDate imBestandSeit;
     private String name;
     private String beschreibung;
     private int menge;
     private double preis;
 
     public Produkt(String name, String beschreibung, int menge, double preis) {
+        imBestandSeit = LocalDate.now();
         this.name = name;
         this.beschreibung = beschreibung;
         this.menge = menge;
         this.preis = preis;
     }
 
-    public String getDatum() {
-        return datum;
+    public LocalDate getImBestandSeit() {
+        return imBestandSeit;
     }
 
-    public void setDatum(String datum) {
-        this.datum = datum;
+    public void setImBestandSeit(LocalDate imBestandSeit) {
+        this.imBestandSeit = imBestandSeit;
     }
 
     public String getName() {

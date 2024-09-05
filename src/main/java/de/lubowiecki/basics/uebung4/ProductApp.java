@@ -10,10 +10,12 @@ public class ProductApp {
     private static final Scanner scanner = new Scanner(System.in);
 
     // In der ArrayList werden die Produkte gesammelt
-    private static final List<Produkt> produkte = new ArrayList<>();
+    //private static final List<Produkt> produkte = new ArrayList<>();
+
+    private static Lager lager = new Lager();
 
 
-    // String für die Anzeige der AUswahlmöglichkeiten
+    // String für die Anzeige der Auswahlmöglichkeiten
     private static final String KEYS = "\n***************************************\n" +
                                         " N : Neues Produkt \n" +
                                         " L : Produkte auflisten \n" +
@@ -49,13 +51,17 @@ public class ProductApp {
 
     private static void showProduct() {
         System.out.println("Produkte");
+        /*
         for(Produkt p : produkte) {
             System.out.println(p.getName());
         }
+        */
+        lager.printProdukt();
     }
 
     private static void addProduct() {
-        produkte.add(createProduct());
+        //produkte.add(createProduct());
+        lager.addProdukt(createProduct());
         System.out.println("Produkt gespeichert.");
 
     }
